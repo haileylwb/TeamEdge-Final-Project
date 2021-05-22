@@ -4,6 +4,7 @@ var pomodoroVar = 5 //25 min later
 var shortBreakVar = 6//1000*60*5
 var longBreakVar = 8//1000*60*10
 
+
 // pomodoro functions
 var interval;
 var timeVar;
