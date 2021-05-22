@@ -26,12 +26,17 @@ function longBreak(){
 
 
 // starts the timer
-function start(){
-    interval = setInterval(function(){
-        timeVar -= 1;
-        console.log(timeVar);
-        if (timeVar == 0) {
-            clearInterval(interval)
-        }
-    }, 1000)
+function start(goOrNo){
+    if (goOrNo == 0){
+        interval = setInterval(function(){
+            timeVar -= 1;
+            console.log(timeVar);
+            if (timeVar == 0) {
+                clearInterval(interval)
+            }
+        }, 1000)
+    } else if (goOrNo == 1) {
+        clearInterval(interval)
+    }
 }
+
