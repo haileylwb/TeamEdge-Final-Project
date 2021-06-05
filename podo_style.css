@@ -1,27 +1,84 @@
 .top{
     width: 33.33%;
     float:left;
-    background-color: #399bcc;
+    background-color: #66c8e3;
     color:white;
+    padding: 14px 28px;
+    border-radius:8px;
+}
+
+.top:hover{
+    background-color: white;
+    color: #66c8e3;
+    transition-duration: 0.3s;
 }
 
 h1{
     text-align: center;
-    background-color: #BFFC89;
+    background-color: #e67a8d;
     margin: 0px;
-    border-top: solid 10px #BFFC89;
+    border-top: solid 10px #e67a8d;
     padding-top:30px;
+    color: #421c23;
 }
 
 h3{
     text-align:center;
-    background-color: #BFFC89;
+    background-color: #e67a8d;
     margin: 0px;
-    border-top: solid 10px #BFFC89;
+    border-top: solid 10px #e67a8d;
     padding-bottom: 35px;
-    color: #66854B;
+    color: #8c3a49;
 }
 
+.quote{
+    color: #421c23;
+    text-align:center;
+    font-size: 20px;
+    padding-top:80px;
+}
+
+.wiseOldie{
+    color:#8c3a49;
+    text-align:center;
+    padding-bottom:30px;
+}
+
+
+.actQuote{
+    color:#8c3a49;
+    text-align:center;
+}
+
+.pink{
+    background-color: #e67a8d;
+}
 body{
     margin: 0px;
 }
+
+#timer{
+    text-align:center;
+    font-size: 60px;
+    padding-top:50px;
+    margin: 30px;
+    
+}
+
+.bottom{
+    width: 50%;
+    text-align:center;
+    float:left;
+    padding: 14px 28px;
+    border-radius:8px;
+    background-color: #95c977;
+    color:white;
+}
+
+.bottom:hover{
+    background-color: white;
+    color: #95c977;
+    transition-duration: 0.3s;
+}
+
+
