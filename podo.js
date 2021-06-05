@@ -1,5 +1,7 @@
 console.log("this program works!");
 
+let idThingy = document.getElementById("timer");
+
 var pomodoroVar = 5 //25 min later
 var shortBreakVar = 6//1000*60*5
 var longBreakVar = 8//1000*60*10
@@ -11,16 +13,19 @@ var timeVar;
 
 function pomodoro(){
     console.log("Commencing POMODORO");
+    idThingy.innerHTML = "25:00";
     return timeVar = pomodoroVar;
 }
 
 function shortBreak(){
     console.log("Commencing SHORT BREAK");
+    idThingy.innerHTML = "5:00";
     return timeVar = shortBreakVar;
 }
 
 function longBreak(){
     console.log("Commencing LONG BREAK");
+    idThingy.innerHTML = "10:00";
     return timeVar = longBreakVar;
 }
 
@@ -30,7 +35,9 @@ function start(goOrNo){
     if (goOrNo == 0){
         interval = setInterval(function(){
             timeVar -= 1;
-            console.log(timeVar);
+            format(timeVar)
+            idThingy.innerHTML = minutes + ':' + seconds;
+            console.log(idThingy.innerHTML);
             if (timeVar == 0) {
                 clearInterval(interval)
             }
@@ -38,5 +45,11 @@ function start(goOrNo){
     } else if (goOrNo == 1) {
         clearInterval(interval)
     }
+}
+
+function format(timeVar){
+    minutes = Math.floor(timeVar / 60);
+    seconds = Math.round(timeVar - (minutes*60));
+    return minutes, seconds;
 }
 
