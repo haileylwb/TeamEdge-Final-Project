@@ -8,11 +8,18 @@
   <body>
       <h1>POMODORO</h1>
       <h3>so you have time to catch up on your favorite anime</h3>
-      <button class="top" onclick="pomodoro()">Pomodoro</button>
-      <button class="top" onclick="shortBreak()">Short Break</button>
-      <button class="top" onclick="longBreak()">Long Break</button>
+      <div class="pink">
+        <button class="top" onclick="pomodoro()">POMODORO</button>
+        <button class="top" onclick="shortBreak()">SHORT BREAK</button>
+        <button class="top" onclick="longBreak()">LONG BREAK</button>
+      </div>
       <p id=timer>00:00</p>
-      <button class="bottom" onclick="start(0)">Start / Unpause</button>
-      <button class="bottom" onclick="start(1)">Pause</button>
+      <div class="pink">
+        <button class="bottom" onclick="start(0)">Start / Unpause</button>
+        <button class="bottom" onclick="start(1)">Pause</button>
+        <p class="quote">Motivational Quote :D</p>
+        <p class="actQuote">"{{quote['q']}}"</p>
+        <p class="wiseOldie">-{{quote['a']}}</p>
+      </div>
   </body>
 </html>
