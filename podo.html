@@ -3,15 +3,15 @@
   <head>
       <title>Pomodoro</title>
       <link rel="stylesheet" href="static/podo_style.css">
-      <script src="../static/podo.js"></script>
+      <script src="../static/podo.js" defer></script>
   </head>
   <body>
-      <h1>Pomodoro</h1>
-      <h3>so you can watch your anime</h3>
+      <h1>POMODORO</h1>
+      <h3>so you have time to catch up on your favorite anime</h3>
       <button class="top" onclick="pomodoro()">Pomodoro</button>
       <button class="top" onclick="shortBreak()">Short Break</button>
       <button class="top" onclick="longBreak()">Long Break</button>
-      <p class=timer>00:00</p>
+      <p id=timer>00:00</p>
       <button class="bottom" onclick="start(0)">Start / Unpause</button>
       <button class="bottom" onclick="start(1)">Pause</button>
   </body>
